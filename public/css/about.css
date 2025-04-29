@@ -1,39 +1,155 @@
-.about-animations {
-    margin-top: 30px;
-    width: 100%;
-}
-
 .animation-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-color: rgba(20, 20, 30, 0.8);
-    padding: 15px;
-    border: 1px solid var(--accent);
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  background-color: #1e1e2e;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-#programming-animation {
-    width: 100%;
-    height: auto;
+svg {
+  width: 100%;
+  height: 100%;
 }
 
-.floating-symbol {
-    opacity: 0.9;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px rgba(97, 218, 251, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(97, 218, 251, 0.9));
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.rotate {
+  animation: rotation 10s linear infinite;
+  transform-origin: center;
+}
+
+.blink {
+  animation: blink 2s ease-in-out infinite;
 }
 
 .code-line {
-    opacity: 0;
+  animation: typing 3s steps(40, end) 1s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
 }
 
-.particle {
-    fill: var(--accent);
+.cursor {
+  animation: cursor-blink 1s step-end infinite;
 }
 
-@media (max-width: 768px) {
-    .animation-container {
-        max-width: 100%;
-    }
+.glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.node-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.screen-animate {
+  transition: all 0.3s;
+}
+
+#laptop:hover #screen-content {
+  fill: #1a1a2e;
+}
+
+#laptop:hover .code-line {
+  animation-play-state: running;
+}
+
+#database:hover {
+  filter: drop-shadow(0 0 8px #16a085);
+  cursor: pointer;
+}
+
+.floating-symbol:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: brightness(1.2);
+  transition: all 0.3s ease;
+}
+.about {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.about-bg-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-bg-svg svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content,
+.about-text {
+  position: relative;
+  z-index: 1;
 }

@@ -1,619 +1,1299 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fabricio Montanari | Desarrollador Web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/index.css">
-    <link rel="stylesheet" href="/public/css/particulas.css">
-    <link rel="stylesheet" href="/public/css/about.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    
-</head>
-<body>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <link rel="stylesheet" href="/public/css/particulas.css" />
+    <link rel="stylesheet" href="/public/css/about.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <div class="logo">
-                <a href="#home">F<span class="logo-accent">M</span></a>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <a href="#home" class="nav-link">Inicio</a>
-                <a href="#about" class="nav-link">Sobre mí</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="#home">F<span class="logo-accent">M</span></a>
         </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Inicio</a>
+          <a href="#about" class="nav-link">Sobre mí</a>
+          <a href="#projects" class="nav-link">Proyectos</a>
+          <a href="#contact" class="nav-link">Contacto</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home" class="home">
-        <div class="background-shapes" id="shapes"></div>
-        <div class="container">
-            <div class="home-content">
-                <p class="home-greeting" data-aos="fade-up">Hola, mi nombre es</p>
-                <h1 class="home-title" data-aos="fade-up" data-aos-delay="100">Fabricio Montanari.</h1>
-                <h2 class="home-subtitle" data-aos="fade-up" data-aos-delay="200">Desarrollo soluciones web y sistemas.</h2>
-                <p class="home-description" data-aos="fade-up" data-aos-delay="300">
-                    Ingeniero en Sistemas apasionado por el desarrollo web, análisis de datos y diseño de aplicaciones. Especializado en tecnologías backend y frontend con enfoque en la optimización de procesos y la experiencia del usuario.
-                </p>
-                <div class="home-buttons" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#projects" class="btn btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-outline">Contactarme</a>
-                </div>
-            </div>
+      <div class="background-shapes" id="shapes"></div>
+      <div class="container">
+        <div class="home-content">
+          <p class="home-greeting" data-aos="fade-up">Hola, mi nombre es</p>
+          <h1 class="home-title" data-aos="fade-up" data-aos-delay="100">
+            Fabricio Montanari.
+          </h1>
+          <h2 class="home-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Desarrollador web y de sistemas.
+          </h2>
+          <p class="home-description" data-aos="fade-up" data-aos-delay="300">
+            Ingeniero en Sistemas apasionado por el desarrollo web, análisis de
+            datos y diseño de aplicaciones. Especializado en tecnologías backend
+            y frontend con enfoque en la optimización de procesos y la
+            experiencia del usuario.
+          </p>
+          <div class="home-buttons" data-aos="fade-up" data-aos-delay="400">
+            <a href="#projects" class="btn btn-primary"
+              >Ver proyectos <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="#contact" class="btn btn-outline">Contactarme</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-up">
-                    <p>
-                        Soy estudiante de Ingeniería en Sistemas en la Universidad Fidélitas en San José, Costa Rica, con fecha estimada de graduación en agosto de 2025. Me especializo en el desarrollo de aplicaciones web y sistemas de gestión de datos.
-                    </p>
-                    <p>
-                        Me caracterizo por mi pensamiento analítico, atención al detalle y capacidad para resolver problemas complejos. Disfruto trabajando en equipos colaborativos y estoy constantemente buscando oportunidades para aprender nuevas tecnologías y mejorar mis habilidades.
-                    </p>
-                    <p>
-                        Aquí hay algunas tecnologías con las que he estado trabajando recientemente:
-                    </p>
-                    <ul class="skills-list">
-                        <li class="skill-item"><i class="fab fa-js"></i> JavaScript</li>
-                        <li class="skill-item"><i class="fab fa-node-js"></i> Node.js</li>
-                        <li class="skill-item"><i class="fab fa-react"></i> React</li>
-                        <li class="skill-item"><i class="fas fa-code"></i> C#</li>
-                        <li class="skill-item"><i class="fab fa-microsoft"></i> .NET Core</li>
-                        <li class="skill-item"><i class="fas fa-database"></i> SQL</li>
-                        <li class="skill-item"><i class="fas fa-database"></i> PL/SQL</li>
-                        <li class="skill-item"><i class="fas fa-database"></i> OracleDB</li>
-                        <li class="skill-item"><i class="fab fa-docker"></i> Docker</li>
-                        <li class="skill-item"><i class="fas fa-code"></i> Flutter</li>
-                        <li class="skill-item"><i class="fas fa-fire"></i> Firebase</li>
-                        <li class="skill-item"><i class="fas fa-cloud"></i> Cloud Services</li>
-                    </ul>
-                </div>
-                <div class="about-animations" data-aos="fade-up" data-aos-delay="200">
-                    <div class="animation-container">
-                        <svg id="programming-animation" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <pattern id="code-grid" patternUnits="userSpaceOnUse" width="100" height="100">
-                                    <text x="0" y="10" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">function() { }</text>
-                                    <text x="10" y="20" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">if (condition) {</text>
-                                    <text x="20" y="30" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">return result;</text>
-                                    <text x="0" y="40" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">const data = [];</text>
-                                    <text x="10" y="50" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">async await</text>
-                                    <text x="20" y="60" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">try { } catch {}</text>
-                                    <text x="0" y="70" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">.then(() => {})</text>
-                                    <text x="10" y="80" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">export default</text>
-                                    <text x="20" y="90" fill="rgba(0, 128, 255, 0.1)" font-family="monospace" font-size="10">import React</text>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#code-grid)" />
-                            
-                            <g id="laptop" transform="translate(100, 100)">
-                                <rect x="0" y="0" width="300" height="200" rx="10" fill="#333" />
-                                <rect x="10" y="10" width="280" height="160" fill="#1e1e1e" />
-                                
-                                <text x="20" y="35" fill="#61dafb" font-family="monospace" font-size="12" class="code-line">import React from 'react';</text>
-                                <text x="20" y="55" fill="#f92672" font-family="monospace" font-size="12" class="code-line">function SecuritySystem() {</text>
-                                <text x="30" y="75" fill="#a6e22e" font-family="monospace" font-size="12" class="code-line">const [isSecure, setSecure] = useState(true);</text>
-                                <text x="30" y="95" fill="#e6db74" font-family="monospace" font-size="12" class="code-line">if (!isSecure) alertSystem();</text>
-                                <text x="30" y="115" fill="#66d9ef" font-family="monospace" font-size="12" class="code-line">return <Firewall active={true} />;</text>
-                                <text x="20" y="135" fill="#f92672" font-family="monospace" font-size="12" class="code-line">}</text>
-                                <text x="20" y="155" fill="#ae81ff" font-family="monospace" font-size="12" class="code-line">export default SecuritySystem;</text>
-                                
-                                <path d="M0,200 L-30,230 L330,230 L300,200 Z" fill="#222" />
-                            </g>
-                            
-                            <g id="floating-symbols">
-                                <g id="lock" class="floating-symbol" transform="translate(60, 50)">
-                                    <rect x="10" y="15" width="30" height="25" rx="3" fill="#FFD700" />
-                                    <path d="M15,15 V5 C15,2.5 20,0 25,0 C30,0 35,2.5 35,5 V15" stroke="#FFD700" stroke-width="3" fill="none" />
-                                </g>
-                                
-                                <g id="shield" class="floating-symbol" transform="translate(400, 70)">
-                                    <path d="M25,0 L0,10 V25 C0,40 25,50 25,50 C25,50 50,40 50,25 V10 L25,0" fill="none" stroke="#4CAF50" stroke-width="3" />
-                                    <text x="15" y="32" font-family="Arial" font-size="20" fill="#4CAF50" class="shield-text">✓</text>
-                                </g>
-                                
-                                <g id="network" class="floating-symbol" transform="translate(380, 300)">
-                                    <circle cx="0" cy="0" r="10" fill="#3498db" />
-                                    <circle cx="50" cy="-20" r="10" fill="#3498db" />
-                                    <circle cx="30" cy="30" r="10" fill="#3498db" />
-                                    <line x1="0" y1="0" x2="50" y2="-20" stroke="#3498db" stroke-width="2" />
-                                    <line x1="0" y1="0" x2="30" y2="30" stroke="#3498db" stroke-width="2" />
-                                    <line x1="50" y1="-20" x2="30" y2="30" stroke="#3498db" stroke-width="2" />
-                                </g>
-                                
-                                <g id="binary" class="floating-symbol" transform="translate(50, 300)">
-                                    <text x="0" y="0" font-family="monospace" font-size="14" fill="#e74c3c">01001010</text>
-                                    <text x="0" y="20" font-family="monospace" font-size="14" fill="#e74c3c">10110101</text>
-                                    <text x="0" y="40" font-family="monospace" font-size="14" fill="#e74c3c">01100111</text>
-                                </g>
-                                
-                                <g id="gear1" class="floating-symbol gear" transform="translate(450, 200)">
-                                    <path d="M20,0 L23,7 L30,8 L25,14 L27,20 L20,18 L13,20 L15,14 L10,8 L17,7 Z" fill="#9b59b6" />
-                                    <circle cx="20" cy="14" r="5" fill="#7b3a96" />
-                                </g>
-                                
-                                <g id="gear2" class="floating-symbol gear" transform="translate(420, 180)">
-                                    <path d="M15,0 L17,5 L22,6 L19,10 L20,15 L15,13 L10,15 L11,10 L8,6 L13,5 Z" fill="#9b59b6" />
-                                    <circle cx="15" cy="10" r="3" fill="#7b3a96" />
-                                </g>
-                            </g>
-                            
-                            <g id="database" class="floating-symbol" transform="translate(30, 180)">
-                                <ellipse cx="25" cy="15" rx="25" ry="10" fill="#16a085" />
-                                <path d="M0,15 V40 C0,45 12.5,50 25,50 C37.5,50 50,45 50,40 V15" fill="none" stroke="#16a085" stroke-width="2" />
-                                <ellipse cx="25" cy="40" rx="25" ry="10" fill="none" stroke="#16a085" stroke-width="2" />
-                                <line x1="10" y1="25" x2="40" y2="25" stroke="#1abc9c" stroke-width="2" />
-                                <line x1="15" y1="35" x2="35" y2="35" stroke="#1abc9c" stroke-width="2" />
-                            </g>
-                            
-                            <g id="particles">
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                
-              <!--   <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <div class="about-bg-svg">
+          <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient
+                id="laptop-gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#333" />
+                <stop offset="100%" stop-color="#111" />
+              </linearGradient>
+
+              <linearGradient
+                id="screen-gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#1e1e2e" />
+                <stop offset="100%" stop-color="#181825" />
+              </linearGradient>
+
+              <radialGradient
+                id="glow-gradient"
+                cx="50%"
+                cy="50%"
+                r="50%"
+                fx="50%"
+                fy="50%"
+              >
+                <stop offset="0%" stop-color="rgba(97, 218, 251, 0.5)" />
+                <stop offset="100%" stop-color="rgba(97, 218, 251, 0)" />
+              </radialGradient>
+            </defs>
+
+            <rect width="100%" height="100%" fill="none" />
+
+            <circle
+              cx="400"
+              cy="225"
+              r="180"
+              fill="url(#glow-gradient)"
+              class="glow"
+            />
+
+            <g id="laptop" transform="translate(250, 150)" class="float">
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="180"
+                rx="10"
+                fill="url(#laptop-gradient)"
+                stroke="#555"
+                stroke-width="2"
+              />
+              <rect
+                id="screen-content"
+                x="15"
+                y="15"
+                width="270"
+                height="150"
+                rx="5"
+                fill="url(#screen-gradient)"
+                class="screen-animate"
+              />
+
+              <text
+                x="30"
+                y="45"
+                fill="#61dafb"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                import React, { useState } from 'react';
+              </text>
+              <text
+                x="30"
+                y="65"
+                fill="#f92672"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                function PortfolioApp() {
+              </text>
+              <text
+                x="45"
+                y="85"
+                fill="#a6e22e"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                const [projects, setProjects] = useState([]);
+              </text>
+              <text
+                x="45"
+                y="105"
+                fill="#e6db74"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                useEffect(() => fetchProjects(), []);
+              </text>
+              <text
+                x="45"
+                y="125"
+                fill="#66d9ef"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                return
+                <Dashboard projects="{projects}" />
+                ;
+              </text>
+              <text
+                x="30"
+                y="145"
+                fill="#f92672"
+                font-family="monospace"
+                font-size="12"
+                class="code-line"
+              >
+                }
+              </text>
+              <text
+                x="420"
+                y="145"
+                fill="#ae81ff"
+                font-family="monospace"
+                font-size="12"
+                class="cursor"
+              >
+                |
+              </text>
+
+              <path d="M0,180 L-40,220 L340,220 L300,180 Z" fill="#222" />
+            </g>
+
+            <g
+              id="react-logo"
+              transform="translate(120, 100)"
+              class="floating-symbol float"
+            >
+              <circle
+                cx="0"
+                cy="0"
+                r="30"
+                fill="none"
+                stroke="#61dafb"
+                stroke-width="3"
+              />
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="15"
+                ry="30"
+                fill="none"
+                stroke="#61dafb"
+                stroke-width="3"
+                class="rotate"
+              />
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="15"
+                ry="30"
+                fill="none"
+                stroke="#61dafb"
+                stroke-width="3"
+                transform="rotate(60)"
+                class="rotate"
+              />
+              <ellipse
+                cx="0"
+                cy="0"
+                rx="15"
+                ry="30"
+                fill="none"
+                stroke="#61dafb"
+                stroke-width="3"
+                transform="rotate(120)"
+                class="rotate"
+              />
+              <circle cx="0" cy="0" r="5" fill="#61dafb" />
+            </g>
+
+            <g
+              id="nodejs-logo"
+              transform="translate(650, 120)"
+              class="floating-symbol float"
+              style="animation-delay: -1s"
+            >
+              <path
+                d="M0,0 L40,23 L40,69 L0,92 L-40,69 L-40,23 Z"
+                fill="#83cd29"
+              />
+              <path
+                d="M0,5 L35,25 L35,65 L0,85 L-35,65 L-35,25 Z"
+                fill="#333"
+              />
+              <text
+                x="0"
+                y="5"
+                text-anchor="middle"
+                font-family="Arial"
+                font-weight="bold"
+                font-size="24"
+                fill="#83cd29"
+              >
+                N
+              </text>
+            </g>
+
+            <g
+              id="database"
+              transform="translate(100, 350)"
+              class="floating-symbol"
+            >
+              <ellipse cx="0" cy="-25" rx="35" ry="15" fill="#16a085" />
+              <path
+                d="M-35,-25 V25 C-35,35 -20,45 0,45 C20,45 35,35 35,25 V-25"
+                fill="none"
+                stroke="#16a085"
+                stroke-width="2"
+              />
+              <ellipse
+                cx="0"
+                cy="25"
+                rx="35"
+                ry="15"
+                fill="none"
+                stroke="#16a085"
+                stroke-width="2"
+              />
+              <line
+                x1="-20"
+                y1="0"
+                x2="20"
+                y2="0"
+                stroke="#1abc9c"
+                stroke-width="2"
+              />
+              <line
+                x1="-15"
+                y1="15"
+                x2="15"
+                y2="15"
+                stroke="#1abc9c"
+                stroke-width="2"
+              />
+            </g>
+
+            <g
+              id="cloud"
+              transform="translate(700, 350)"
+              class="floating-symbol"
+              style="animation-delay: -2s"
+            >
+              <path
+                d="M-40,10 C-40,-10 -25,-25 -10,-25 C-5,-40 10,-45 20,-35 C30,-45 50,-40 55,-25 C70,-25 80,-10 75,5 C80,15 75,25 65,30 L-25,30 C-35,25 -45,15 -40,10 Z"
+                fill="#3498db"
+              />
+              <text
+                x="15"
+                y="15"
+                text-anchor="middle"
+                font-family="Arial"
+                font-weight="bold"
+                font-size="20"
+                fill="white"
+              >
+                {}
+              </text>
+            </g>
+
+            <g
+              id="code-bracket"
+              transform="translate(580, 230)"
+              class="floating-symbol float"
+              style="animation-delay: -1.5s"
+            >
+              <text
+                x="0"
+                y="0"
+                font-family="monospace"
+                font-size="50"
+                fill="#e74c3c"
+                text-anchor="middle"
+              >
+                { }
+              </text>
+            </g>
+
+            <g
+              id="terminal"
+              transform="translate(200, 230)"
+              class="floating-symbol float"
+              style="animation-delay: -0.5s"
+            >
+              <rect
+                x="-30"
+                y="-25"
+                width="60"
+                height="50"
+                rx="5"
+                fill="#2c3e50"
+              />
+              <text
+                x="-20"
+                y="0"
+                font-family="monospace"
+                font-size="14"
+                fill="#ecf0f1"
+              >
+                $_
+              </text>
+            </g>
+
+            <g
+              id="gear1"
+              transform="translate(550, 80)"
+              class="floating-symbol gear rotate"
+            >
+              <path
+                d="M0,-20 L5,-19 L7,-12 L14,-9 L18,-15 L22,-13 L20,-6 L25,0 L20,6 L22,13 L18,15 L14,9 L7,12 L5,19 L0,20 L-5,19 L-7,12 L-14,9 L-18,15 L-22,13 L-20,6 L-25,0 L-20,-6 L-22,-13 L-18,-15 L-14,-9 L-7,-12 L-5,-19 Z"
+                fill="#9b59b6"
+              />
+              <circle cx="0" cy="0" r="8" fill="#7b3a96" />
+            </g>
+
+            <g
+              id="wifi"
+              transform="translate(150, 50)"
+              class="floating-symbol blink"
+            >
+              <path
+                d="M0,15 C-15,5 -30,5 -45,15 M0,15 C15,5 30,5 45,15 M0,15 C-8,5 -16,5 -24,15 M0,15 C8,5 16,5 24,15"
+                stroke="#3498db"
+                stroke-width="4"
+                fill="none"
+              />
+              <circle cx="0" cy="20" r="4" fill="#3498db" />
+            </g>
+
+            <g
+              id="mobile"
+              transform="translate(650, 250)"
+              class="floating-symbol float"
+              style="animation-delay: -2.5s"
+            >
+              <rect x="-15" y="-25" width="30" height="50" rx="5" fill="#333" />
+              <rect
+                x="-12"
+                y="-22"
+                width="24"
+                height="40"
+                rx="2"
+                fill="#1abc9c"
+              />
+              <circle
+                cx="0"
+                cy="25"
+                r="3"
+                fill="#555"
+                transform="translate(0, -8)"
+              />
+            </g>
+
+            <g
+              id="binary"
+              transform="translate(60, 180)"
+              class="floating-symbol"
+            >
+              <text
+                x="0"
+                y="0"
+                font-family="monospace"
+                font-size="14"
+                fill="#e74c3c"
+              >
+                01
+              </text>
+              <text
+                x="0"
+                y="20"
+                font-family="monospace"
+                font-size="14"
+                fill="#e74c3c"
+              >
+                10
+              </text>
+              <text
+                x="0"
+                y="40"
+                font-family="monospace"
+                font-size="14"
+                fill="#e74c3c"
+              >
+                01
+              </text>
+            </g>
+
+            <g id="particles">
+              <circle cx="100" cy="100" r="2" fill="#fff" class="blink" />
+              <circle
+                cx="150"
+                cy="250"
+                r="1"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -0.3s"
+              />
+              <circle
+                cx="250"
+                cy="80"
+                r="1.5"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -0.6s"
+              />
+              <circle
+                cx="300"
+                cy="350"
+                r="2"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -0.9s"
+              />
+              <circle
+                cx="450"
+                cy="120"
+                r="1"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -1.2s"
+              />
+              <circle
+                cx="500"
+                cy="300"
+                r="1.5"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -1.5s"
+              />
+              <circle
+                cx="650"
+                cy="180"
+                r="2"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -1.8s"
+              />
+              <circle
+                cx="700"
+                cy="280"
+                r="1"
+                fill="#fff"
+                class="blink"
+                style="animation-delay: -2.1s"
+              />
+            </g>
+
+            <g
+              id="connection-lines"
+              stroke-dasharray="5,5"
+              stroke-width="1"
+              stroke="#3498db"
+            >
+              <line x1="120" y1="100" x2="250" y2="150" class="blink" />
+              <line
+                x1="650"
+                y1="120"
+                x2="550"
+                y2="150"
+                class="blink"
+                style="animation-delay: -0.5s"
+              />
+              <line
+                x1="550"
+                y1="80"
+                x2="650"
+                y2="120"
+                class="blink"
+                style="animation-delay: -1s"
+              />
+              <line
+                x1="100"
+                y1="350"
+                x2="250"
+                y2="250"
+                class="blink"
+                style="animation-delay: -1.5s"
+              />
+              <line
+                x1="650"
+                y1="250"
+                x2="550"
+                y2="200"
+                class="blink"
+                style="animation-delay: -2s"
+              />
+              <line
+                x1="700"
+                y1="350"
+                x2="650"
+                y2="250"
+                class="blink"
+                style="animation-delay: -2.5s"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <h2 class="section-title" data-aos="fade-up">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-up">
+            <p>
+              Soy estudiante de Ingeniería en Sistemas en la Universidad
+              Fidélitas en San José, Costa Rica, con fecha estimada de
+              graduación en agosto de 2025. Me especializo en el desarrollo de
+              aplicaciones web y sistemas de gestión de datos.
+            </p>
+            <p>
+              Me caracterizo por mi pensamiento analítico, atención al detalle y
+              capacidad para resolver problemas complejos. Disfruto trabajando
+              en equipos colaborativos y estoy constantemente buscando
+              oportunidades para aprender nuevas tecnologías y mejorar mis
+              habilidades.
+            </p>
+            <p>
+              Aquí hay algunas tecnologías con las que he estado trabajando
+              recientemente:
+            </p>
+            <ul class="skills-list">
+              <li class="skill-item"><i class="fab fa-python"></i> Python</li>
+              <li class="skill-item"><i class="fab fa-java"></i> Java</li>
+              <li class="skill-item"><i class="fab fa-js"></i> JavaScript</li>
+              <li class="skill-item"><i class="fab fa-php"></i> PHP</li>
+              <li class="skill-item"><i class="fab fa-html5"></i> HTML</li>
+              <li class="skill-item"><i class="fab fa-node-js"></i> Node.js</li>
+              <li class="skill-item"><i class="fab fa-react"></i> React</li>
+              <li class="skill-item"><i class="fas fa-code"></i> C#</li>
+              <li class="skill-item">
+                <i class="fab fa-microsoft"></i> .NET Core
+              </li>
+              <li class="skill-item"><i class="fas fa-database"></i> SQL</li>
+              <li class="skill-item"><i class="fas fa-database"></i> PL/SQL</li>
+              <li class="skill-item">
+                <i class="fas fa-database"></i> OracleDB
+              </li>
+              <li class="skill-item"><i class="fab fa-docker"></i> Docker</li>
+              <li class="skill-item"><i class="fas fa-code"></i> Flutter</li>
+              <li class="skill-item"><i class="fas fa-fire"></i> Firebase</li>
+              <li class="skill-item">
+                <i class="fas fa-cloud"></i> Cloud Services
+              </li>
+            </ul>
+          </div>
+
+          <!--   <div class="about-image" data-aos="fade-up" data-aos-delay="200">
                     <div class="about-image-container">
                         <img src="/api/placeholder/300/300" alt="Fabricio Montanari" class="profile-img">
                     </div>
                 </div>-->
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
-            <div class="projects-container">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="modalProject2">
-                    <div class="project-image">
-                        <img src="/api/placeholder/400/180" alt="Airline Boarding System">
-                        <i class="fas fa-external-link-alt project-link-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistema de Abordaje de Aerolínea</h3>
-                        <p class="project-description">
-                            Plataforma web para check-in, validación de boletos y gestión de abordaje con generación de reportes y verificación de identidad.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag"><i class="fas fa-code"></i> C#</span>
-                            <span class="project-tag"><i class="fab fa-microsoft"></i> .NET Core</span>
-                            <span class="project-tag"><i class="fas fa-database"></i> SQL Server</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="modalProject3">
-                    <div class="project-image">
-                        <img src="/public/assets/clinicaDental/bg.PNG" alt="Dental Appointment System">
-                        <i class="fas fa-external-link-alt project-link-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistema Dental de Citas y Expedientes</h3>
-                        <p class="project-description">
-                            Aplicación web completa para clínicas dentales con gestión de citas, registros médicos y notificaciones por correo electrónico.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                            <span class="project-tag"><i class="fas fa-database"></i> OracleDB</span>
-                            <span class="project-tag"><i class="fab fa-docker"></i> Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-project="modalProject4">
-                    <div class="project-image">
-                        <img src="/public/assets/imgGym/logo.png" alt="Fitness Management App">
-                        <i class="fas fa-external-link-alt project-link-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">App de Gestión Fitness</h3>
-                        <p class="project-description">
-                            Aplicación multiplataforma para administración de gimnasios con seguimiento de membresías, rutinas personalizadas y reportes financieros.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag"><i class="fas fa-f"></i> FlutterFlow</span>
-                            <span class="project-tag"><i class="fas fa-fire"></i> Firebase</span>
-                            <span class="project-tag"><i class="fas fa-code"></i> Dart</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-project="modalProject5">
-                    <div class="project-image">
-                        <img src="/public/assets/misioners/logo.jpeg" alt="Sistema de Gestión de Eventos Religiosos">
-                        <i class="fas fa-external-link-alt project-link-icon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistema de Gestión de Eventos Religiosos</h3>
-                        <p class="project-description">
-                            Plataforma web para administrar eventos religiosos como retiros, encuentros y talleres con registro en línea y generación de reportes en PDF.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                            <span class="project-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-                            <span class="project-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
+        <div class="projects-container">
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-project="modalProject2"
+          >
+            <div class="project-image">
+              <img
+                src="/api/placeholder/400/180"
+                alt="Airline Boarding System"
+              />
+              <i class="fas fa-external-link-alt project-link-icon"></i>
             </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Abordaje de Aerolínea</h3>
+              <p class="project-description">
+                Plataforma web para check-in, validación de boletos y gestión de
+                abordaje con generación de reportes y verificación de identidad.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag"><i class="fas fa-code"></i> C#</span>
+                <span class="project-tag"
+                  ><i class="fab fa-microsoft"></i> .NET Core</span
+                >
+                <span class="project-tag"
+                  ><i class="fas fa-database"></i> SQL Server</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-project="modalProject3"
+          >
+            <div class="project-image">
+              <img
+                src="/public/assets/clinicaDental/bg.PNG"
+                alt="Dental Appointment System"
+              />
+              <i class="fas fa-external-link-alt project-link-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Sistema Dental de Citas y Expedientes
+              </h3>
+              <p class="project-description">
+                Aplicación web completa para clínicas dentales con gestión de
+                citas, registros médicos y notificaciones por correo
+                electrónico.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag"
+                  ><i class="fab fa-node-js"></i> Node.js</span
+                >
+                <span class="project-tag"
+                  ><i class="fas fa-database"></i> OracleDB</span
+                >
+                <span class="project-tag"
+                  ><i class="fab fa-docker"></i> Docker</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-project="modalProject4"
+          >
+            <div class="project-image">
+              <img
+                src="/public/assets/imgGym/logo.png"
+                alt="Fitness Management App"
+              />
+              <i class="fas fa-external-link-alt project-link-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">App de Gestión Fitness</h3>
+              <p class="project-description">
+                Aplicación multiplataforma para administración de gimnasios con
+                seguimiento de membresías, rutinas personalizadas y reportes
+                financieros.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag"
+                  ><i class="fas fa-f"></i> FlutterFlow</span
+                >
+                <span class="project-tag"
+                  ><i class="fas fa-fire"></i> Firebase</span
+                >
+                <span class="project-tag"
+                  ><i class="fas fa-code"></i> Dart</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-project="modalProject5"
+          >
+            <div class="project-image">
+              <img
+                src="/public/assets/misioners/logo.jpeg"
+                alt="Sistema de Gestión de Eventos Religiosos"
+              />
+              <i class="fas fa-external-link-alt project-link-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Sistema de Gestión de Eventos Religiosos
+              </h3>
+              <p class="project-description">
+                Plataforma web para administrar eventos religiosos como retiros,
+                encuentros y talleres con registro en línea y generación de
+                reportes en PDF.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag"
+                  ><i class="fab fa-node-js"></i> Node.js</span
+                >
+                <span class="project-tag"
+                  ><i class="fas fa-database"></i> PostgreSQL</span
+                >
+                <span class="project-tag"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-text" data-aos="fade-up">
-                    <p>
-                        ¿Interesado en trabajar juntos? Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme a través del formulario o por los medios directos que comparto a continuación.
-                    </p>
-                    <div class="contact-info">
-                        <div class="contact-item" data-aos="fade-up">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>fmontanari766@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Teléfono</h4>
-                                <p>+506 8443 4624</p>
-                            </div>
-                        </div>
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Ubicación</h4>
-                                <p>San José, Costa Rica</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+        <div class="contact-content">
+          <div class="contact-text" data-aos="fade-up">
+            <p>
+              ¿Interesado en trabajar juntos? Estoy abierto a nuevas
+              oportunidades y colaboraciones. No dudes en contactarme a través
+              del formulario o por los medios directos que comparto a
+              continuación.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item" data-aos="fade-up">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
                 </div>
-                <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Asunto</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Mensaje</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                    </form>
+                <div>
+                  <h4>Email</h4>
+                  <p>fmontanari766@gmail.com</p>
                 </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Teléfono</h4>
+                  <p>+506 8443 4624</p>
+                </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Ubicación</h4>
+                  <p>San José, Costa Rica</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/fabriciomontanari" class="social-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/fabricio-montanari-vargas-097b60261/" class="social-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="social-link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/fabrimontanari/" class="social-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <p class="footer-text">
-                &copy; 2025 Fabricio Montanari. Todos los derechos reservados.
-                <br>
-                Diseñado y desarrollado con <i class="fas fa-heart" style="color: var(--accent);"></i>
-            </p>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/fabriciomontanari"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fabricio-montanari-vargas-097b60261/"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/fabrimontanari/"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
+        <p class="footer-text">
+          &copy; 2025 Fabricio Montanari. Todos los derechos reservados.
+          <br />
+        </p>
+      </div>
     </footer>
 
     <!-- Project Modals -->
-   
+
     <!-- Modal 2 -->
     <div class="modal" id="modalProject2">
-        <div class="modal-content">
-            <span class="modal-close"><i class="fas fa-times"></i></span>
-            <h2 class="modal-title">Sistema de Abordaje de Aerolínea</h2>
-            <p class="modal-description">
-                Contribuí al desarrollo de un sistema de abordaje para la plataforma web de una aerolínea, implementando el módulo de check-in que guarda los datos de los pasajeros en una lista de abordaje dinámica.
-            </p>
-            <div class="modal-features">
-                <h3>Características</h3>
-                <ul class="feature-list">
-                    <li>Validación de información de tickets e identificación</li>
-                    <li>Cambio de estado de abordaje de pasajeros</li>
-                    <li>Finalización del proceso de abordaje con informes en PDF</li>
-                    <li>Interfaz intuitiva para el personal de la aerolínea</li>
-                    <li>Integración con sistemas de control de acceso</li>
-                </ul>
-            </div>
-            <div class="modal-tech">
-                <h3>Tecnologías</h3>
-                <div class="tech-tags">
-                    <span class="project-tag"><i class="fas fa-code"></i> C#</span>
-                    <span class="project-tag"><i class="fab fa-microsoft"></i> .NET Core</span>
-                    <span class="project-tag"><i class="fas fa-database"></i> SQL Server</span>
-                    <span class="project-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                    <span class="project-tag"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="project-tag"><i class="fas fa-cloud"></i> REST API</span>
-                </div>
-            </div>
-            <div class="modal-gallery">
-                <div class="gallery-item">
-                    <img src="/api/placeholder/250/180" alt="Check-in Interface">
-                </div>
-                <div class="gallery-item">
-                    <img src="/api/placeholder/250/180" alt="Passenger Validation">
-                </div>
-                <div class="gallery-item">
-                    <img src="/api/placeholder/250/180" alt="Boarding Report">
-                </div>
-            </div>
+      <div class="modal-content">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <h2 class="modal-title">Sistema de Abordaje de Aerolínea</h2>
+        <p class="modal-description">
+          Contribuí al desarrollo de un sistema de abordaje para la plataforma
+          web de una aerolínea, implementando el módulo de check-in que guarda
+          los datos de los pasajeros en una lista de abordaje dinámica.
+        </p>
+        <div class="modal-features">
+          <h3>Características</h3>
+          <ul class="feature-list">
+            <li>Validación de información de tickets e identificación</li>
+            <li>Cambio de estado de abordaje de pasajeros</li>
+            <li>Finalización del proceso de abordaje con informes en PDF</li>
+            <li>Interfaz intuitiva para el personal de la aerolínea</li>
+            <li>Integración con sistemas de control de acceso</li>
+          </ul>
         </div>
+        <div class="modal-tech">
+          <h3>Tecnologías</h3>
+          <div class="tech-tags">
+            <span class="project-tag"><i class="fas fa-code"></i> C#</span>
+            <span class="project-tag"
+              ><i class="fab fa-microsoft"></i> .NET Core</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-database"></i> SQL Server</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-bootstrap"></i> Bootstrap</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-js"></i> JavaScript</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-cloud"></i> REST API</span
+            >
+          </div>
+        </div>
+        <div class="modal-gallery">
+          <div class="gallery-item">
+            <img src="/api/placeholder/250/180" alt="Check-in Interface" />
+          </div>
+          <div class="gallery-item">
+            <img src="/api/placeholder/250/180" alt="Passenger Validation" />
+          </div>
+          <div class="gallery-item">
+            <img src="/api/placeholder/250/180" alt="Boarding Report" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal 3 -->
     <div class="modal" id="modalProject3">
-        <div class="modal-content">
-            <span class="modal-close"><i class="fas fa-times"></i></span>
-            <h2 class="modal-title">Sistema Dental de Citas y Expedientes</h2>
-            <p class="modal-description">
-                Desarrollé una aplicación web completa para una clínica dental con roles de cliente y administrador. El sistema gestiona citas, registros médicos y comunicaciones con los pacientes.
-            </p>
-            <div class="modal-features">
-                <h3>Características</h3>
-                <ul class="feature-list">
-                    <li>Reserva de citas con notificaciones por correo electrónico</li>
-                    <li>Autenticación de usuarios y actualizaciones de perfil</li>
-                    <li>Registros de pacientes con carga de imágenes y seguimiento de diagnósticos</li>
-                    <li>Interfaz administrativa para gestión completa de usuarios y citas</li>
-                    <li>Sincronización en tiempo real de la disponibilidad de horarios</li>
-                </ul>
-            </div>
-            <div class="modal-tech">
-                <h3>Tecnologías</h3>
-                <div class="tech-tags">
-                    <span class="project-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                    <span class="project-tag"><i class="fas fa-database"></i> OracleDB</span>
-                    <span class="project-tag"><i class="fab fa-docker"></i> Docker</span>
-                    <span class="project-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                    <span class="project-tag"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="project-tag"><i class="fas fa-cloud"></i> DigitalOcean</span>
-                    <span class="project-tag"><i class="fas fa-cloud"></i> Oracle Cloud</span>
-                </div>
-            </div>
-            <div class="modal-results">
-                <h3>Resultados</h3>
-                <p>
-                    El sistema permitió un proceso de programación de citas más rápido, redujo los errores de reserva y mejoró la accesibilidad a los registros de los pacientes.
-                </p>
-            </div>
-            <div class="modal-gallery">
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/hacerCita.png" alt="Appointment Booking">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/usuarios.JPG" alt="Patient Records">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/adminMenu.JPG" alt="Admin Dashboard">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/adminCitas.JPG" alt="Admin Booking">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/citasCal.png" alt="Admin Booking Calendar">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/correo.png" alt="Email Confirmation">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/vistaExpedient4es.JPG" alt="Expedientes">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/expediente.JPG" alt="Usuario Expediente">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/vistaExpedient4es.JPG" alt="Expediente Dashboard">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/obsExp.JPG" alt="Observacion Expediente">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/resenas.JPG" alt="Resenas">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/clinicaDental/index.png" alt="Index">
-                </div>
-            </div>
+      <div class="modal-content">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <h2 class="modal-title">Sistema Dental de Citas y Expedientes</h2>
+        <p class="modal-description">
+          Desarrollé una aplicación web completa para una clínica dental con
+          roles de cliente y administrador. El sistema gestiona citas, registros
+          médicos y comunicaciones con los pacientes.
+        </p>
+        <div class="modal-features">
+          <h3>Características</h3>
+          <ul class="feature-list">
+            <li>Reserva de citas con notificaciones por correo electrónico</li>
+            <li>Autenticación de usuarios y actualizaciones de perfil</li>
+            <li>
+              Registros de pacientes con carga de imágenes y seguimiento de
+              diagnósticos
+            </li>
+            <li>
+              Interfaz administrativa para gestión completa de usuarios y citas
+            </li>
+            <li>
+              Sincronización en tiempo real de la disponibilidad de horarios
+            </li>
+          </ul>
         </div>
+        <div class="modal-tech">
+          <h3>Tecnologías</h3>
+          <div class="tech-tags">
+            <span class="project-tag"
+              ><i class="fab fa-node-js"></i> Node.js</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-database"></i> OracleDB</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-docker"></i> Docker</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-bootstrap"></i> Bootstrap</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-js"></i> JavaScript</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-cloud"></i> DigitalOcean</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-cloud"></i> Oracle Cloud</span
+            >
+          </div>
+        </div>
+        <div class="modal-results">
+          <h3>Resultados</h3>
+          <p>
+            El sistema permitió un proceso de programación de citas más rápido,
+            redujo los errores de reserva y mejoró la accesibilidad a los
+            registros de los pacientes.
+          </p>
+        </div>
+        <div class="modal-gallery">
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/hacerCita.png"
+              alt="Appointment Booking"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/usuarios.JPG"
+              alt="Patient Records"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/adminMenu.JPG"
+              alt="Admin Dashboard"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/adminCitas.JPG"
+              alt="Admin Booking"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/citasCal.png"
+              alt="Admin Booking Calendar"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/correo.png"
+              alt="Email Confirmation"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/vistaExpedient4es.JPG"
+              alt="Expedientes"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/expediente.JPG"
+              alt="Usuario Expediente"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/vistaExpedient4es.JPG"
+              alt="Expediente Dashboard"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/clinicaDental/obsExp.JPG"
+              alt="Observacion Expediente"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/clinicaDental/resenas.JPG" alt="Resenas" />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/clinicaDental/index.png" alt="Index" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal 4 -->
     <div class="modal" id="modalProject4">
-        <div class="modal-content">
-            <span class="modal-close"><i class="fas fa-times"></i></span>
-            <h2 class="modal-title">App de Gestión Fitness</h2>
-            <p class="modal-description">
-                Construí una aplicación multiplataforma para la gestión de gimnasios accesible vía móvil, tablet y escritorio. La aplicación permite a los usuarios realizar pagos de membresía, seguimiento de fitness y acceder a rutinas personalizadas.
-            </p>
-            <div class="modal-features">
-                <h3>Características</h3>
-                <ul class="feature-list">
-                    <li>Pagos de membresía y seguimiento de fitness</li>
-                    <li>Rutinas de entrenamiento personalizadas</li>
-                    <li>Gráficos de progreso interactivos</li>
-                    <li>Gestión de clases especiales por entrenadores</li>
-                    <li>Herramientas de administración y reportes financieros</li>
-                </ul>
-            </div>
-            <div class="modal-tech">
-                <h3>Tecnologías</h3>
-                <div class="tech-tags">
-                    <span class="project-tag"><i class="fab fa-f"></i> FlutterFlow</span>
-                    <span class="project-tag"><i class="fas fa-fire"></i> Firebase</span>
-                    <span class="project-tag"><i class="fas fa-code"></i> Dart</span>
-                    <span class="project-tag"><i class="fas fa-cloud"></i> Cloud Functions</span>
-                    <span class="project-tag"><i class="fas fa-database"></i> Firestore</span>
-                </div>
-            </div>
-            <div class="modal-results">
-                <h3>Resultados</h3>
-                <p>
-                    Aumentó la participación de los usuarios y simplificó el seguimiento de membresías y rutinas, facilitando una mejor gestión del gimnasio.
-                </p>
-                <p>*Hacer click  en la imagen  para verla  completa</p>
-            </div>
-            <div class="modal-gallery">
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/inicioGymstatic.png" alt="Mobile App">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/rutina.png" alt="Workout Planner">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/detallesRutina.png" alt="Workout Details">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/prog1.png" alt="Progress Tracking">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/prog2.png" alt="Progress Tracking2">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/prog3.png" alt="Progress Tracking3">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/prog4.png" alt="Progress Tracking4">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/imgGym/prog5.png" alt="Progress Tracking5">
-                </div>
-            </div>
+      <div class="modal-content">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <h2 class="modal-title">App de Gestión Fitness</h2>
+        <p class="modal-description">
+          Construí una aplicación multiplataforma para la gestión de gimnasios
+          accesible vía móvil, tablet y escritorio. La aplicación permite a los
+          usuarios realizar pagos de membresía, seguimiento de fitness y acceder
+          a rutinas personalizadas.
+        </p>
+        <div class="modal-features">
+          <h3>Características</h3>
+          <ul class="feature-list">
+            <li>Pagos de membresía y seguimiento de fitness</li>
+            <li>Rutinas de entrenamiento personalizadas</li>
+            <li>Gráficos de progreso interactivos</li>
+            <li>Gestión de clases especiales por entrenadores</li>
+            <li>Herramientas de administración y reportes financieros</li>
+          </ul>
         </div>
+        <div class="modal-tech">
+          <h3>Tecnologías</h3>
+          <div class="tech-tags">
+            <span class="project-tag"
+              ><i class="fab fa-f"></i> FlutterFlow</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-fire"></i> Firebase</span
+            >
+            <span class="project-tag"><i class="fas fa-code"></i> Dart</span>
+            <span class="project-tag"
+              ><i class="fas fa-cloud"></i> Cloud Functions</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-database"></i> Firestore</span
+            >
+          </div>
+        </div>
+        <div class="modal-results">
+          <h3>Resultados</h3>
+          <p>
+            Aumentó la participación de los usuarios y simplificó el seguimiento
+            de membresías y rutinas, facilitando una mejor gestión del gimnasio.
+          </p>
+          <p>*Hacer click en la imagen para verla completa</p>
+        </div>
+        <div class="modal-gallery">
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/inicioGymstatic.png"
+              alt="Mobile App"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/imgGym/rutina.png" alt="Workout Planner" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/detallesRutina.png"
+              alt="Workout Details"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/prog1.png"
+              alt="Progress Tracking"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/prog2.png"
+              alt="Progress Tracking2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/prog3.png"
+              alt="Progress Tracking3"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/prog4.png"
+              alt="Progress Tracking4"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/imgGym/prog5.png"
+              alt="Progress Tracking5"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal 5 -->
     <div class="modal" id="modalProject5">
-        <div class="modal-content">
-            <span class="modal-close"><i class="fas fa-times"></i></span>
-            <h2 class="modal-title">Sistema de Gestión de Eventos Religiosos</h2>
-            <p class="modal-description">
-                Desarrollé una aplicación web para una organización para gestionar eventos religiosos como retiros, encuentros y talleres. Los usuarios pueden registrarse en línea y recibir notificaciones por correo electrónico.
-            </p>
-            <div class="modal-features">
-                <h3>Características</h3>
-                <ul class="feature-list">
-                    <li>Registro en línea para eventos con notificaciones por email</li>
-                    <li>Panel de administración para creación de eventos</li>
-                    <li>Seguimiento de participantes y generación de informes en PDF</li>
-                    <li>Diseño responsivo para cualquier dispositivo</li>
-                </ul>
-            </div>
-            <div class="modal-tech">
-                <h3>Tecnologías</h3>
-                <div class="tech-tags">
-                    <span class="project-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                    <span class="project-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-                    <span class="project-tag"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="project-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                    <span class="project-tag"><i class="fab fa-html5"></i> HTML</span>
-                    <span class="project-tag"><i class="fab fa-css3-alt"></i> CSS</span>
-                </div>
-            </div>
-            <div class="modal-results">
-                <h3>Resultados</h3>
-                <p>
-                    Automatizó el 90% de los flujos de trabajo de registro de eventos, mejorando la eficiencia de gestión de eventos y reduciendo la sobrecarga administrativa.
-                </p>
-                
-            </div>
-            <div class="modal-gallery">
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/crearEvent.png" alt="Event Form">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/formInscrip.png" alt="Event Registration">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/index1.png" alt="Index">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/index2.png" alt="Index2">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/index3.png" alt="Index3">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/pdf.png" alt="PDF Reports">
-                </div>
-                <div class="gallery-item">
-                    <img src="/public/assets/misioners/correo.png" alt="Email Confirmation">
-                </div>
-            </div>
+      <div class="modal-content">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <h2 class="modal-title">Sistema de Gestión de Eventos Religiosos</h2>
+        <p class="modal-description">
+          Desarrollé una aplicación web para una organización para gestionar
+          eventos religiosos como retiros, encuentros y talleres. Los usuarios
+          pueden registrarse en línea y recibir notificaciones por correo
+          electrónico.
+        </p>
+        <div class="modal-features">
+          <h3>Características</h3>
+          <ul class="feature-list">
+            <li>Registro en línea para eventos con notificaciones por email</li>
+            <li>Panel de administración para creación de eventos</li>
+            <li>
+              Seguimiento de participantes y generación de informes en PDF
+            </li>
+            <li>Diseño responsivo para cualquier dispositivo</li>
+          </ul>
         </div>
+        <div class="modal-tech">
+          <h3>Tecnologías</h3>
+          <div class="tech-tags">
+            <span class="project-tag"
+              ><i class="fab fa-node-js"></i> Node.js</span
+            >
+            <span class="project-tag"
+              ><i class="fas fa-database"></i> PostgreSQL</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-js"></i> JavaScript</span
+            >
+            <span class="project-tag"
+              ><i class="fab fa-bootstrap"></i> Bootstrap</span
+            >
+            <span class="project-tag"><i class="fab fa-html5"></i> HTML</span>
+            <span class="project-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+          </div>
+        </div>
+        <div class="modal-results">
+          <h3>Resultados</h3>
+          <p>
+            Automatizó el 90% de los flujos de trabajo de registro de eventos,
+            mejorando la eficiencia de gestión de eventos y reduciendo la
+            sobrecarga administrativa.
+          </p>
+        </div>
+        <div class="modal-gallery">
+          <div class="gallery-item">
+            <img
+              src="/public/assets/misioners/crearEvent.png"
+              alt="Event Form"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/misioners/formInscrip.png"
+              alt="Event Registration"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/misioners/index1.png" alt="Index" />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/misioners/index2.png" alt="Index2" />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/misioners/index3.png" alt="Index3" />
+          </div>
+          <div class="gallery-item">
+            <img src="/public/assets/misioners/pdf.png" alt="PDF Reports" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="/public/assets/misioners/correo.png"
+              alt="Email Confirmation"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-<div id="image-lightbox" style="display:none;" class="lightbox-overlay">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-img" src="" alt="Imagen Ampliada">
-  </div>
-  
+    <div id="image-lightbox" style="display: none" class="lightbox-overlay">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="Imagen Ampliada" />
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="/public/js/index.js"></script>    
+    <script src="/public/js/index.js"></script>
     <script src="/public/js/particulas.js"></script>
     <script src="/public/js/about.js"></script>
     <script>
-    document.querySelectorAll('.gallery-item img').forEach(img => {
-        img.addEventListener('click', () => {
-            const lightbox = document.getElementById('image-lightbox');
-            const lightboxImg = lightbox.querySelector('.lightbox-img');
-            lightboxImg.src = img.src;
-            lightbox.style.display = 'flex';
+      document.querySelectorAll(".gallery-item img").forEach((img) => {
+        img.addEventListener("click", () => {
+          const lightbox = document.getElementById("image-lightbox");
+          const lightboxImg = lightbox.querySelector(".lightbox-img");
+          lightboxImg.src = img.src;
+          lightbox.style.display = "flex";
         });
-    });
-    
-    document.querySelector('.lightbox-close').addEventListener('click', () => {
-        document.getElementById('image-lightbox').style.display = 'none';
-    });
-    
-    document.getElementById('image-lightbox').addEventListener('click', (e) => {
-        if (e.target === e.currentTarget) {
-            e.currentTarget.style.display = 'none';
-        }
-    });
-</script>
-</body>
+      });
+
+      document
+        .querySelector(".lightbox-close")
+        .addEventListener("click", () => {
+          document.getElementById("image-lightbox").style.display = "none";
+        });
+
+      document
+        .getElementById("image-lightbox")
+        .addEventListener("click", (e) => {
+          if (e.target === e.currentTarget) {
+            e.currentTarget.style.display = "none";
+          }
+        });
+    </script>
+  </body>
 </html>
