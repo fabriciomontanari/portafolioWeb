@@ -1,0 +1,39 @@
+.about-animations {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.animation-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(20, 20, 30, 0.8);
+    padding: 15px;
+    border: 1px solid var(--accent);
+}
+
+#programming-animation {
+    width: 100%;
+    height: auto;
+}
+
+.floating-symbol {
+    opacity: 0.9;
+}
+
+.code-line {
+    opacity: 0;
+}
+
+.particle {
+    fill: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .animation-container {
+        max-width: 100%;
+    }
+}
