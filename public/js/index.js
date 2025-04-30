@@ -134,15 +134,6 @@ modals.forEach(modal => {
     });
 });
 
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-        contactForm.reset();
-    });
-}
-
 const fadeElements = document.querySelectorAll('.fade-in');
 if (fadeElements.length > 0) {
     const fadeInObserver = new IntersectionObserver((entries) => {
