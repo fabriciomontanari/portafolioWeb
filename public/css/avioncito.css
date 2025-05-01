@@ -1,0 +1,82 @@
+#paper-plane {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+  }
+
+  button.enviar {
+    position: relative;
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+  }
+
+  button.enviar:hover {
+    background-color: #354f52;
+  }
+
+  button.enviar:active {
+    transform: scale(0.98);
+  }
+
+  #contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cad2c5;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #52796f;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(82, 121, 111, 0.2);
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .trail-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #84a98c;
+    border-radius: 50%;
+    z-index: 9998;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+  }
