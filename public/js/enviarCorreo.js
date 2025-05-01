@@ -132,20 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }, 1800);
         
-        
-        console.log("Formulario enviado:", formData);
-        
-        if (window.Swal) {
-          Swal.fire({
-            icon: "success",
-            title: "Mensaje enviado",
-            text: "Gracias por contactarme. Te responderé pronto.",
-            confirmButtonColor: "#52796f", 
-          });
-        } else {
-          alert("¡Mensaje enviado con éxito!");
-        }
-        
         contactForm.reset();
         
       }, 1800);
