@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
@@ -33,124 +34,16 @@ app.post("/send-email", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "fmontanari766@gmail.com",
-      pass: "",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
     from: `"${name}" <${email}>`,
-    to: "fmontanari766@gmail.com",
+    to: process.env.EMAIL_USER,
     subject: subject,
     html: `
-  <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuevo Mensaje de Contacto</title>
-  <style>
-    /* Usando la paleta de colores proporcionada */
-    :root {
-      --light: #cad2c5;
-      --light-accent: #84a98c;
-      --medium: #52796f;
-      --dark-accent: #354f52;
-      --dark: #2f3e46;
-      --white: #f8f9fa;
-    }
-    
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
-      background-color: var(--white);
-      margin: 0;
-      padding: 0;
-    }
-    
-    .email-container {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: var(--white);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 10px 20px rgba(47, 62, 70, 0.15);
-    }
-    
-    .email-header {
-      background-color: var(--dark);
-      color: var(--white);
-      padding: 25px;
-      text-align: center;
-      border-bottom: 5px solid var(--dark-accent);
-    }
-    
-    .email-header h1 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: 300;
-      letter-spacing: 1px;
-    }
-    
-    .email-content {
-      padding: 30px;
-      background-color: var(--white);
-    }
-    
-    .message-title {
-      color: var(--dark-accent);
-      font-size: 20px;
-      margin-top: 0;
-      margin-bottom: 25px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--light-accent);
-    }
-    
-    .field-row {
-      margin-bottom: 20px;
-    }
-    
-    .field-label {
-      color: var(--medium);
-      font-weight: 600;
-      margin-bottom: 5px;
-      display: block;
-    }
-    
-    .field-value {
-      background-color: var(--light);
-      padding: 12px 15px;
-      border-radius: 6px;
-      border-left: 4px solid var(--medium);
-    }
-    
-    .message-box {
-      background-color: var(--light);
-      padding: 20px;
-      border-radius: 6px;
-      border-left: 4px solid var(--medium);
-      margin-top: 10px;
-      white-space: pre-line;
-    }
-    
-    .email-footer {
-      background-color: var(--light-accent);
-      color: var(--white);
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    
-    .icon {
-      width: 50px;
-      height: 50px;
-      fill: var(--white);
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
   <div class="email-container">
     <div class="email-header">
       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -161,34 +54,33 @@ app.post("/send-email", async (req, res) => {
     
     <div class="email-content">
       <h3 class="message-title">Detalles del Formulario de Contacto</h3>
+      <br>
       
       <div class="field-row">
-        <span class="field-label">Nombre:</span>
+        <h4>Nombre:</h4>
         <div class="field-value">${name}</div>
+        <br>
       </div>
       
       <div class="field-row">
-        <span class="field-label">Email:</span>
+        <h4>Email:</h4>
         <div class="field-value">${email}</div>
+        <br>
       </div>
       
       <div class="field-row">
-        <span class="field-label">Asunto:</span>
+        <h4>Asunto:</h4>
         <div class="field-value">${subject}</div>
+        <br>
       </div>
       
       <div class="field-row">
-        <span class="field-label">Mensaje:</span>
+        <h4>Mensaje:</h4>
         <div class="message-box">${message}</div>
+        <br>
       </div>
-    </div>
-    
-    <div class="email-footer">
-      Este correo ha sido generado automáticamente. Por favor no responda directamente a este mensaje.
     </div>
   </div>
-</body>
-</html>
     `,
   };
 
