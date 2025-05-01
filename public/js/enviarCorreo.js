@@ -92,6 +92,46 @@ document.addEventListener("DOMContentLoaded", function () {
       
       setTimeout(() => {
         airplane.style.display = "none";
+
+        const baseURL = `${window.location.protocol}//${window.location.host}`;
+
+        
+          fetch(`${baseURL}/send-email`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.success) {
+                if (window.Swal) {
+                  Swal.fire({
+                    icon: "success",
+                    title: "Mensaje enviado",
+                    text: "Gracias por contactarme. Te responderé pronto.",
+                    confirmButtonColor: "#52796f",
+                  });
+                } else {
+                  alert("¡Mensaje enviado con éxito!");
+                }
+                contactForm.reset();
+              } else {
+                throw new Error("Error en el servidor");
+              }
+            })
+            .catch((err) => {
+              console.error("Error al enviar el formulario:", err);
+              Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "Hubo un problema al enviar tu mensaje. Intenta más tarde.",
+                confirmButtonColor: "#9e2a2b",
+              });
+            });
+        }, 1800);
+        
         
         console.log("Formulario enviado:", formData);
         
@@ -106,10 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("¡Mensaje enviado con éxito!");
         }
         
-        // Resetear el formulario
         contactForm.reset();
         
       }, 1800);
     }, 50);
   });
-});
